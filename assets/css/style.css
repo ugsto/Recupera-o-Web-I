@@ -1,0 +1,88 @@
+:root {
+    --header-anchor-color: black;
+    --header-anchor-font-family: 'Roboto', sans-serif;
+    --thumbnail-h1-color: white;
+    --thumbnail-h1-font-family: 'Roboto', sans-serif;
+    --thumbnail-h1-font-size: 4em;
+    --thumbnail-p-font-family: 'Open Sans', sans-serif;
+    --thumbnail-p-color: #d7d1d9;
+    --why-choose-flexor-color: white;
+    --why-choose-flexor-h1-font-size: 2em;
+    --why-choose-flexor-h1-font-family: 'Roboto', sans-serif;
+    --why-choose-flexor-p-font-family: 'Open Sans', sans-serif;
+}
+
+.spacer {
+    width: 100%;
+}
+
+header > nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-weight: 600;
+}
+
+header a,
+header span {
+    color: var(--header-anchor-color);
+    font-family: var(--header-anchor-font-family);
+}
+
+#thumbnail {
+    position: relative;
+    height: 50vh;
+    width: 100vw;
+}
+
+#thumbnail .img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/img/hero-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+#thumbnail hgroup {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 5%;
+    width: 60vw;
+}
+
+#thumbnail h1 {
+    color: var(--thumbnail-h1-color);
+    font-family: var(--thumbnail-h1-font-family);
+    font-size: var(--thumbnail-h1-font-size);
+}
+
+#thumbnail p {
+    font-family: var(--thumbnail-p-font-family);
+    color: var(--thumbnail-p-color);
+}
+
+#why-choose-flexor {
+    position: absolute;
+    margin-left: 10%;
+    margin-top: -5%;
+    background-color: #ff6600;
+    color: var(--why-choose-flexor-color);
+    border-left: 10%;
+}
+
+#why-choose-flexor h1 {
+    font-family: var(--why-choose-flexor-p-font-family);
+    font-size: var(--why-choose-flexor-h1-font-size);
+}
+
+#why-choose-flexor p {
+    font-family: var(--why-choose-flexor-p-font-family);
+}
